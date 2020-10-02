@@ -1,0 +1,399 @@
+body {
+    background-image: url(Img/background6.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    margin-top: 2%;
+    background-color: rgb(231, 216, 216);
+}
+
+
+/* Nav-bar */
+
+.nav-bar {
+    margin-top: 15%;
+    position: fixed;
+    top: 3%;
+    left: 0;
+    width: 10%;
+}
+
+.BlocProfil {
+    padding: 2%;
+}
+
+.BlocExperience {
+    padding: 2%;
+}
+
+.BlocEducation {
+    padding: 2%;
+}
+
+.BlocProjet {
+    padding: 2%;
+}
+
+.BlocCompetences {
+    padding: 2%;
+}
+
+.BlocDivers {
+    padding: 2%;
+}
+
+.BlocContact {
+    padding: 2%;
+}
+
+.TitreContact,
+.TitreDivers,
+.TitreCompetences,
+.TitreProjet,
+.TitreEducation,
+.TitreProfil,
+.TitreExperience {
+    color: midnightblue
+}
+
+.TitreContact:hover,
+.TitreDivers:hover,
+.TitreCompetences:hover,
+.TitreProjet:hover,
+.TitreEducation:hover,
+.TitreProfil:hover:hover,
+.TitreExperience:hover {
+    color: firebrick;
+}
+
+
+/* Début de la page OnePage Centrée */
+
+.Container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+/* Image de Profil */
+
+.BlocImageProfil {
+    padding: 2%;
+}
+
+.PhotoProfil {
+    width: 25%;
+}
+
+.borderProfil {
+    border: solid 3px;
+    border-radius: 150px;
+}
+
+.PhotoProfil:hover {
+    border-radius: 0;
+}
+
+.BlocForma,
+.BlocDiplome,
+.BlocExp,
+.BlocProj {
+    margin-top: 5%;
+}
+
+
+/* Partie Contact */
+
+.linkedin {
+    color: blue;
+}
+
+.githubColor {
+    color: rgb(0, 153, 255);
+}
+
+
+/* Progress bar (Page Compétence)*/
+
+.container {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.light-grey {
+    color: rgb(19, 7, 187);
+    background-color: #bd935d;
+}
+
+.round {
+    border-radius: 4px;
+}
+
+.blue {
+    color: rgb(25, 0, 255);
+    background: linear-gradient(45deg, yellow, red);
+}
+
+
+/* Différentes Tailles Texte */
+
+.size10 {
+    font-size: 10px;
+}
+
+.size20 {
+    font-size: 20px;
+}
+
+.size25 {
+    font-size: 25px;
+}
+
+.size30 {
+    font-size: 30px;
+}
+
+.size40 {
+    font-size: 40px;
+}
+
+.size50 {
+    font-size: 50px;
+}
+
+.sizeIcon {
+    font-size: 100px;
+}
+
+.macOS {
+    width: 7%;
+}
+
+
+/* class des couleurs */
+
+.colorText {
+    color: rgb(0, 60, 255);
+}
+
+.colorRed {
+    color: red
+}
+
+.colorBlue {
+    color: blue
+}
+
+.colorYellow {
+    color: yellow
+}
+
+.colorOrange {
+    color: orange
+}
+
+.colorPurple {
+    color: purple
+}
+
+
+/* Taille img MySql */
+
+.sizeDefault {
+    width: 10%;
+}
+
+
+/* Margin */
+
+.marginLeft {
+    margin-left: 50px;
+}
+
+.marginTop {
+    margin-top: 15%;
+}
+
+.marginTop10 {
+    margin-top: 10%;
+}
+
+.marginAuto {
+    margin: 0 auto;
+}
+
+.marginBot {
+    margin-bottom: 5%;
+}
+
+
+/* Autre */
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.listStyleNone {
+    list-style-type: none;
+}
+
+
+/* Flèche pour remonter en haut de la page + Copyright */
+
+.logoRight {
+    position: fixed;
+    bottom: 0%;
+    right: 0;
+    width: 10%;
+    color: black;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+/* Menu Hamburger */
+
+#menuToggle {
+    display: block;
+    position: fixed;
+    margin-top: 15%;
+    margin-left: 0.5%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: tomato;
+}
+
+
+/*block invisible au dessus du hamburger*/
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+
+/*design du hamburger*/
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: rgb(0, 0, 0);
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), backgrounds cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+
+/*transformation du hamburger en croix*/
+
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+
+/*on rend invisible la barre du milieu*/
+
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+/*finalisation de la  croix*/
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+/*definition que le menu est absolue*/
+
+#menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+
+/*transition du texte*/
+
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
+@media (max-width: 980px) {
+    #menu {
+        background: lightgrey;
+    }
+    .PhotoProfil {
+        width: 50%;
+    }
+    .logoRight {
+        position: fixed;
+        bottom: 15%;
+        left: 0.5%;
+        font-size: 30px;
+    }
+    .copyright {
+        text-align: center;
+    }
+    .Profil {
+        margin-top: 20%;
+    }
+}
