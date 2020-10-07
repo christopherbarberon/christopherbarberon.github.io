@@ -125,7 +125,7 @@ body {
 }
 
 .light-grey {
-    color: rgb(19, 7, 187);
+    color: #424874;
     background-color: #a6b1e1;
 }
 
@@ -134,7 +134,7 @@ body {
 }
 
 .blue {
-    color: rgb(25, 0, 255);
+    color:#424874;
     background: linear-gradient(45deg, black, white);
 }
 
