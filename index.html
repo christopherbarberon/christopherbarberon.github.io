@@ -1,351 +1,236 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Link HTML sur le CSS-->
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    <!--Ajout d'une police d'écriture-->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
-    <!--Link du site FontAwesome pour les icônes-->
-    <script src="https://kit.fontawesome.com/7931b2b36e.js" crossorigin="anonymous"></script>
-    <!--FavIcon ( Icône de L'URL )-->
-    <link rel="shortcut icon" type="image/png" href="Img/CV.jpg" />
-    <meta name="twitter:title" content="Curriculum Vitae">
-    <meta name="author" content="Amandine, Lucky, Killian, Christopher">
-    <meta name="description" content="Site Curriculum Vitae">
-    <title>Curriculum Vitae</title>
+	<title>Resume Website Template | Home :: w3layouts</title>
+	<script src="js/jquery.min.js"> </script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+ 	<!---- start-smoth-scrolling---->
 </head>
-
 <body>
-    <div id='stars'></div>
-    <div id='stars2'></div>
-    <div id='stars3'></div>
-
-    <!-- Barre de navigation Fixée à Gauche -->
-    <header>
-
-        <nav class="navigation" role="navigation">
-            <div id="menuToggle">
-
-                <!--la checkbox invisible utiliser pour savoir si on a cliquer ou pas-->
-                <input type="checkbox" />
-
-                <!--des span pour ressembler a un hamburger-->
-                <span></span>
-                <span></span>
-                <span></span>
-
-                <!--le menu caché dans le boutton-->
-                <ul id="menu">
-                    <a href="#Profil">
-                        <li><i class="fas fa-user-circle"> </i> Profil</li>
-                    </a>
-                    <a href="#Experience">
-                        <li><i class="fas fa-briefcase"> </i> Expérience</li>
-                    </a>
-                    <a href="#Education">
-                        <li><i class="fas fa-graduation-cap"> </i> Education & Diplômes</li>
-                    </a>
-                    <a href="#Projet">
-                        <li> <i class="fas fa-laptop-code"> </i> Projet & Portfolio</li>
-                    </a>
-                    <a href="#Competences">
-                        <li> <i class="fas fa-tasks"> </i> Compétences</li>
-                    </a>
-                    <a href="#Divers">
-                        <li> <i class="fas fa-cocktail"> </i> Divers</li>
-                    </a>
-                    <a href="#Contact">
-                        <li><i class="fas fa-address-card"> </i>Contact</li>
-                    </a>
-                </ul>
-            </div>
-        </nav>
-
-
-
-
-        <!--<div class="nav-bar">
-
-            <div class="BlocProfil">
-                <a href="#Profil" class="TitreProfil size20">
-                    <i class="fas fa-user-circle"> </i> Profil
-                </a>
-            </div>
-
-
-            <div class="BlocExperience marginTop">
-                <a href="#Experience" class="TitreExperience size20">
-                    <i class="fas fa-briefcase"> </i> Expériences
-                </a>
-            </div>
-
-
-            <div class="BlocEducation marginTop">
-                <a href="#Education" class="TitreEducation size20">
-                    <i class="fas fa-graduation-cap"> </i> Education & Diplômes
-                </a>
-            </div>
-
-
-            <div class="BlocProjet marginTop">
-                <a href="#Projet" class="TitreProjet size20">
-                    <i class="fas fa-laptop-code"> </i> Projet & Portfolio
-                </a>
-            </div>
-
-
-            <div class="BlocCompetences marginTop">
-                <a href="#Competences" class="TitreCompetences size20">
-                    <i class="fas fa-tasks"> </i> Compétences
-                </a>
-            </div>
-
-
-            <div class="BlocDivers marginTop">
-                <a href="#Divers" class="TitreDivers size20">
-                    <i class="fas fa-cocktail"> </i> Divers
-                </a>
-            </div>
-
-
-            <div class="BlocContact marginTop">
-                <a href="#Contact" class="TitreContact size20">
-                    <i class="fas fa-address-card"> </i> Contact
-                </a>
-            </div>
-
-        </div>-->
-
-    </header>
-
-    <!--4 premières lignes tout en haut de la page-->
-
-    <section class="Container">
-
-        <div id="Profil" class="Profil center">
-            
-
-            <h1 class="size40 colorText"> Développeur Full Stack / Alternant <br> 3 ans</h1>
-            <h2 id="test ">BARBERON Christopher</h2>
-            <h3>18 ans 24/12/2001</h3>
-            <h3>Permis B,Véhiculé</h3>
-            <h3>Mobilité Ile de france</h3>
-
-            <!--Photo de profil-->
-
-
-        </div>
-
-        <!--Case Expérience"-->
-
-        <div id="Experience" class="marginTop10 center">
-
-            <h1 class="size40 colorText">Mes Expériences</h1>
-
-            <div class="size20">
-
-                <div class="BlocExp">
-
-                    <h2>Générale des travaux immobiliers</h2>
-
-                    <h3 class="colorRed">janvier 2020 / juin 2020 </h3>
-
-                    <h4 class="colorPurple"> conception d'un site web pour l'entreprise </h4>
-
-                </div>
-
-                <div class="BlocExp">
-
-                    <h2>Générale des travaux immobiliers</h2>
-
-                    <h3 class="colorRed">juillet/aout 2019 </h3>
-
-                    <h4 class="colorPurple">Technicien </h4>
-
-                </div>
-
-                <div class="BlocExp">
-
-                    <h2>Projet de spécialité SIN </h2>
-
-                    <h3 class="colorRed"> décembre 2018/mai 2019 </h3>
-
-                    <h4 class="colorPurple">conception d'un bras robotisé avec commande vocale et manuelle </h4>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!--Case Éducation-->
-
-        <div id="Education" class="marginTop10 center">
-
-            <h1 class="size40 colorText">Mes études & diplomes</h1>
-
-            <div class="size20">
-
-                <div class="BlocForma">
-
-                    <h2>Bachelor Développeur de solutions mobiles et connectées </h2>
-
-                    <h3 class="colorRed">septembre 2020 / juin 2023 </h3>
-
-                    <h4 class="colorPurple">coding factory by esiee it (itescia) </h4>
-
-                </div>
-
-                <div class="BlocForma">
-
-                    <h2>Baccalauréat STI2D Systeme d'Information et Numerique / mention assez bien </h2>
-
-                    <h3 class="colorRed"> juin 2019 </h3>
-
-                    <h4 class="colorPurple"> Lycée Paul Langevin</h4>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-
-
-        <!--Case"compétences"
-            
-            BARRES DE PROGRESSION + pourcentage
-
-            -->
-
-        <div id="Competences" class="marginTop10 center">
-
-            <h1 class="size40 colorText"> Mes Compétences </h1>
-
-
-            <div class="container marginAuto">
-
-                <h1 class="size20">Barre de progression de mes compétences dans le développement</h1>
-
-                <h2 class="size30 colorPurple">Front</h2>
-
-                <i class="fab fa-html5 size40 colorRed"></i>
-                <p class="size25">HTML 5</p>
-                <div class="light-grey round marginBot">
-                    <div class="container blue round" style="width:50%">50% </div>
-                </div>
-
-                <i class="fab fa-css3-alt size40 colorBlue"></i>
-                <p class="size25">CSS 3</p>
-                <div class="light-grey round marginBot">
-                    <div class="container blue round" style="width:50%">50% </div>
-                </div>
-
-                <i class="fab fa-js size40 colorYellow"></i>
-                <p class="size25">Java Script</p>
-                <div class="light-grey round marginBot">
-                    <div class="container blue round" style="width:40%">40%</div>
-                </div>
-                <h2 class="size30 colorPurple">Back</h2>
-
-                <i class="fab fa-java size40 colorBlue"></i>
-                <p class="size25">Java</p>
-                <div class="light-grey round marginBot">
-                    <div class="container blue round" style="width:80%">80% </div>
-                </div>
-            </div>
-
-            <div class="size20">
-
-                <h2 class="size30 colorPurple"> Système d'exploitations / Platformes utilisés : </h2>
-
-                <img src="Img/10141.png" alt="Logo MacOs" class="macOS">
-
-                <p> - MacOS </p>
-
-                <i class="fab fa-windows size40"></i>
-
-                <p> - Windows </p>
-
-                <h2 class="size30 colorPurple"> Logiciels utilisés : </h2>
-
-                <i class="fas fa-mail-bulk size40"></i>
-
-                <p> Pack Office ( Word, Excel, PowerPoint) </p>
-
-
-            </div>
-
-        </div>
-
-
-        <!--Case"Divers"-->
-
-        <div id="Divers" class="marginTop10 center">
-
-            <h1 class="size40 colorText"> Mes Centres d'intérêts </h1>
-
-            <ul class="listStyleNone size20">
-
-                <li>Jeux-vidéo</li>
-                <li>mécanique moto</li>
-                <li>Hardware</li>
-                <li>Animé</li>
-                <li>développement</li>
-
-            </ul>
-
-        </div>
-
-        <!--Case"Contact"-->
-
-        <div id="Contact" class="marginTop10 center">
-
-            <h1 class="size40 colorText"> Me contacter</h1>
-
-            <!--Mise en place du logo GitHub + Lien vers le profil GitHub-->
-
-            <a href="https://github.com/christopherbarberon" target="_blank" title="Aller sur ma page GitHub">
-                <i class="fab fa-github size50 githubColor"></i>
-            </a>
-
-            <!--Mise en place du logo LinkedIn + lien vers le profil LinkedIn-->
-
-            <a href="https://www.linkedin.com/in/christopher-barberon/" target="_blank" title="Aller sur ma page LinkedIn">
-                <i class="fab fa-linkedin size50 marginLeft linkedin"></i>
-            </a>
-
-            <!--Insertion du numéro de téléphone-->
-
-            <p class="size20">Numéro de téléphone : 06.10.75.49.77</p>
-            <p class="size20">Adresse E-Mail : christopher.barberon@orange.fr</p>
-
-        </div>
-
-        <a href="#top">
-            <i class="fas fa-arrow-circle-up size50 logoRight" title="Retourner en haut de la page"></i>
-        </a>
-
-
-    </section>
-
-    <footer>
-
-
-        <p class="copyright">Copyright© 2020</p>
-
-
-
-
-    </footer>
-
-
-
-</body>
-
-</html>
+<!------headerbg starts--------->
+ <div id="top-top" class="headerbg">
+	 <!------header starts--------->
+	   <div class="header">
+		 <!------container starts--------->
+			  <div class="container">
+				   <div class="logo">
+						<a href="#">Resume</a>
+				   </div>
+				  <!------Navigation starts--------->
+				  <div class="nav">
+					 <ul>
+						 <li><a class="scroll" href="#about">A Propos</a></li>
+						 <li><a class="scroll" href="#skills">Comptétence</a></li>
+						 <li><a class="scroll" href="#port">Portfolio</a></li>
+						 <li><a class="scroll" href="#contact">Contact</a></li>
+					 </ul>
+				 </div>
+				  <!------Navigation ends-------->
+					<div class="clear"></div>
+			  </div>
+		 <!------container ends--------->
+	   </div>
+	 <!------header ends--------->
+	 <!------Banner starts--------->
+	   <div class="banner">
+	      <div class="container">
+		     <div class="banner-info">
+			      <div class="bannerlogo">
+					  <img src="images/diamond.png">
+			      </div>
+			      <div class="bannerhead">
+				      <h2>Mon nom est <span>Christopher Barberon</span></h2>
+				      <h3>Développeur front/back end </h3>
+					  <a class="downarrow scroll" href="#about"><span> </span></a>
+			      </div>
+			 </div>
+			 <div class="clear"></div>
+		  </div>
+	  </div>
+	  <!------Banner ends-------->
+ </div>
+ <!------Headerbg ends-------->
+ <!------Content starts--------->
+ <div class="content">
+	 <!------About starts--------->
+	   <div id="about" class="about">
+		 <div class="container">
+			   <div class="header-section text-center">
+				  <h2><span> </span>A propos<span> </span></h2>
+				  </div>
+				 <span><p>Je suis à la recherche d'une alternance de 3 ans afin de pouvoir me perfectionner dans le developpement .</p></span>
+					 
+			  <div class="years">	 
+				<h4><b>Janvier 2020</b></h4>
+				 <span><h4>Développeur web / Chef projet </h4></span>
+				 <p><i> Site internet de l'entreprise en cours de développement .
+
+				 </i></p>
+			  </div> 
+				
+			  <div class="years">	 		
+				 <h4><b>2018/2019</b></h4>
+				 <span><h4>Chef de projet </h4></span>
+				 <p><i> Comme projet de fin d'année j'ai réalisé avec une équipe de 4 personnes un bras robotisé commandable
+					 par la voix et grace a un boitier de commande .
+				 </i></p>
+			  </div> 
+					
+			   <div class="years">	 	
+				 <h4><b>2015/2016</b></h4>
+				 <span><h4>Gérant des fonds et du personnel </h4></span>
+				 <div class="labs">
+					 <p><i>
+						 Entreprise junior: production florale, vente, gestion d'entreprise et gestion des fonds .
+					 </i></p>
+			     </div>
+			  </div>
+				 <a class="arrow scroll" href="#skills"><span> </span></a>
+		  </div>
+	  </div>
+	 <!------About Ends--------->
+	 
+	<!------SKILLS Starts--------->
+	  <div id="skills" class="skills">
+	  <div class="container">
+	     <div class="skills-grids">
+			  <div class="skill-section text-center">
+				  <h2><span> </span>Comptétence<span> </span></h2>
+			  </div>
+					  <div class="services_grids">
+						  <div id="canvas">
+								<div class="skill-grids text-center">
+										<div class="col-md-3">	
+											<div class="skill-grid">
+												<div class="circle" id="circles-1"></div>									
+												 <h3>C++</h3>	
+											 </div>								  
+										</div>
+										<div class="col-md-3">	
+											<div class="skill-grid">
+												<div class="circle" id="circles-2"></div>									
+												 <h3>HTML/CSS</h3>	
+											 </div>								  
+										</div>
+										<div class="col-md-3">	
+											<div class="skill-grid">
+												<div class="circle" id="circles-3"></div>									
+												 <h3>JAVASCRIPT</h3>	
+											 </div>								  
+										</div>
+										<div class="col-md-3">	
+											<div class="skill-grid">
+												<div class="circle" id="circles-4"></div>									
+												 <h3>JAVA</h3>	
+											 </div>								  
+										</div>
+										<div class="clearfix"> </div>
+								  </div>
+						   </div>
+					  </div>
+					<!---->
+					 <script type="text/javascript" src="js/circles.js"></script>
+								 <script>
+									var colors = [
+											['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A']
+										];
+									for (var i = 1; i <= 5; i++) {
+										var child = document.getElementById('circles-' + i),
+											percentage = 50 + (i * 10);
+											
+										Circles.create({
+											id:         child.id,
+											percentage: percentage,
+											radius:     80,
+											width:      15,
+											number:   	percentage / 10,
+											text:       '%',
+											colors:     colors[i - 1]
+										});
+									}
+							
+					</script>
+					
+					<!--/-->
+			 </div>
+		 </div>
+		   <a class="down scroll" href="#port"><span> </span></a>
+	  </div>
+	  </div>
+	 <!------SKILLS Ends--------->
+		 <!------PORTFOLIO Starts--------->
+		 <div id="port" class="Portfolio">
+			  <div class="Portfolio-section text-center">
+			      <h2><span> </span>PORTFOLIO<span> </span></h2>
+			  </div>
+			  <div class="container">
+				  <div class="portfolio-grids">
+					  <div class="portfolio-grid col-md-4">
+						 <a href="https://christopherbarberon.github.io/devine_flou.github.io/"><img src="images/monitr1.png"></a>
+						  <p>site en phase de développement pour un mini-jeux 
+						  </p>
+						  <a class="rightarrow" href="https://christopherbarberon.github.io/devine_flou.github.io/"><span> </span></a>
+					  </div>
+					  <div class="portfolio-grid col-md-4">
+						<a href="https://christopherbarberon.github.io/devine_flou.github.io/"></a>
+						 <p>
+						 </p>
+					 </div>
+					  <div class="portfolio-grid col-md-4">
+						  <a href="https://christopherbarberon.github.io/cozie.github.io/"><img src="images/monitr3.png"></a>
+						  <p>Site d'une marque fictive pour un exercice en groupe </p>
+						  <a class="rightarrow" href="https://christopherbarberon.github.io/cozie.github.io/"><span> </span></a>
+					  </div>
+					  <div class="clear"> </div>
+				  </div>
+				  <a class="portdown scroll" href="#contact"><span> </span></a>
+				  
+			  </div>
+		 </div>
+  </div>
+  <!------Content Ends-------->
+  
+  <!------FOOTER Starts----------->
+  <div  id="contact" class="footer">
+      <div class="container">
+	  
+		   <div class="contact-section text-center">
+			  <h2><span> </span>CONTACT<span> </span></h2>
+		  </div>
+		 <div class="row">
+		 
+			 <div class="col-md-6">
+				  <div class="footer-left">
+						<div class="social-icons">
+						   <a href="https://www.linkedin.com/in/christopher-barberon/"><img src="images/in.png"></a>
+						   <a href="https://github.com/christopherbarberon"><img src="images/twt.png"></a>
+					   </div>
+					   <p>Numéro de télephone : 06-10-75-49-77</p>
+					   <p>adresse Email : christopher.barberon@orange.fr</p>
+				  </div>
+			 </div>
+		 </div>
+	 </div>
+	 <a class="up scroll" href="#top-top"><span> </span></a>
+	  
+ </div>
+ 
+ </body>
+ </html>
+ 
+   
